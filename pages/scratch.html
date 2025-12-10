@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LosLatinoNurses – Scratch Page</title>
+    <link rel="stylesheet" href="../styles/scratch.css">
+    <script src="https://kit.fontawesome.com/a2d9d6c45f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+    <h1 id="top">LosLatinoNurses</h1>
+
+    <div class="social-icons">
+        <a href="https://instagram.com/loslatinonurses"><i class="fab fa-instagram"></i></a>
+        <a href="https://tiktok.com/@loslatinonurses"><i class="fab fa-tiktok"></i></a>
+        <a href="https://youtube.com/@loslatinonurses"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <nav>
+        <a href="resume.html">Back to Resume</a>
+        <a href="joke_generator.html">Latino Remedy Game</a>
+    </nav>
+</header>
+
+<section class="intro">
+    <img src="../images/IMG_0491_Original.jpeg" alt="Los Latino Nurses" class="hero-image">
+
+    <h2>Our Story</h2>
+
+    <ol>
+        <li>Who We Are:
+            <ul>
+                <li>First-generation Latino nursing students</li>
+                <li>Inspired by the sacrifices of immigrant parents</li>
+                <li>Committed to breaking barriers in healthcare</li>
+            </ul>
+        </li>
+
+        <li><strong>Josh Solano</strong>
+            <ul>
+                <li>Born and raised in Orange County, California.</li>
+                <li>Parents immigrated from El Salvador as teens in search of better opportunities.</li>
+                <li>First-generation college student in his second semester of nursing school.</li>
+                <li>Driven to prove that minorities and first-gen students can achieve their dreams.</li>
+                <li>Motivated daily by his parents’ sacrifices and dedication.</li>
+            </ul>
+        </li>
+
+        <li><strong>Bryan Conde</strong>
+            <ul>
+                <li>Born and raised in Danbury, Connecticut.</li>
+                <li>Parents immigrated from Ecuador in search of a better future.</li>
+                <li>Grew up with limited resources but strong family support.</li>
+                <li>First-generation college student in his fourth nursing semester.</li>
+                <li>Passionate about showing Latinos everywhere that success is within reach.</li>
+            </ul>
+        </li>
+
+        <li><strong>Together as LosLatinoNurses</strong>
+            <ul>
+                <li>We honor our heritage and our parents’ sacrifices.</li>
+                <li>We aim to uplift and inspire Latino students in healthcare.</li>
+                <li>We share our journey to show that the world belongs to all of us.</li>
+                <li>We celebrate culture, ambition, resilience, and community.</li>
+            </ul>
+        </li>
+    </ol>
+</section>
+
+
+<section>
+    <h2>Our Introduction Video</h2>
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/I6hhFc2iNu8"
+            allowfullscreen></iframe>
+</section>
+
+<section>
+    <h2>Social Media Data Visualization</h2>
+    <div class='tableauPlaceholder' id='viz1765315398813' style='position: relative'><noscript><a href='#'><img alt='Social Media ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SocialMediaUseMOM&#47;SocialMedia&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='SocialMediaUseMOM&#47;SocialMedia' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;So&#47;SocialMediaUseMOM&#47;SocialMedia&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1765315398813');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1200px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1477px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</section>
+
+
+<footer>
+    <p><a href="#top">Back to top</a></p>
+</footer>
+
+<script>
+function makeJoke(item) {
+    const jokes = {
+        vicks: "Vicks cures EVERYTHING in a Latino household — sore throat, stuffy nose, heartbreak, bad grades… échale Vicks mijo.",
+        "7up": "Latino parents: ‘Stomach hurts?’ — 7UP. ‘Headache?’ — 7UP. ‘Your leg fell off?’ — pues toma 7UP.",
+        huevo: "If your Latino mom starts rubbing an egg on you… just accept it. You're getting spiritually rebooted."
+    };
+    document.getElementById("joke-box").innerHTML = `<p class='joke'>${jokes[item]}</p>`;
+}
+</script>
+
+</body>
+</html>

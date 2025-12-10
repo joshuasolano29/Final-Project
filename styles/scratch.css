@@ -1,0 +1,63 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: #e8f5ff;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #0a9396;
+    color: white;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+.hero-image {
+    width: 70%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.tableau-container iframe {
+    border-radius: 10px;
+}
+
+.remedy-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.item img {
+    width: 120px;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+#joke-box {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    background: #94d2bd;
+    padding: 20px;
+    border-radius: 12px;
+}

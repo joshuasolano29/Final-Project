@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latino Home Remedy Joke Generator</title>
+
+    <!-- Reuse same CSS theme -->
+    <link rel="stylesheet" href="../styles/scratch.css">
+
+    <script src="https://kit.fontawesome.com/a2d9d6c45f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Latino Home Remedy Joke Generator</h1>
+
+    <nav>
+        <a href="scratch.html">⬅ Back to Scratch Page</a>
+        <a href="resume.html">Back to Resume</a>
+    </nav>
+</header>
+
+<section class="joke-section">
+    <h2>Pick a Latino Home Remedy</h2>
+
+    <div class="remedy-grid">
+        <div class="item" onclick="makeJoke('vicks')">
+            <img src="../images/Style_Vicks_Sept2023_HEADER.gif" alt="Vicks">
+            <p>Vicks VapoRub</p>
+        </div>
+
+        <div class="item" onclick="makeJoke('7up')">
+            <img src="../images/7up.jpg" alt="7up">
+            <p>7-Up</p>
+        </div>
+
+        <div class="item" onclick="makeJoke('huevo')">
+            <img src="../images/el_huevo.jpg" alt="Egg">
+            <p>El Huevo</p>
+        </div>
+    </div>
+
+    <div id="joke-box"></div>
+</section>
+
+<footer>
+    <p>© 2025 LosLatinoNurses</p>
+</footer>
+
+<script>
+function makeJoke(item) {
+    const jokes = {
+        vicks: "Vicks cures EVERYTHING in a Latino household — sore throat, stuffy nose, heartbreak, bad grades… échale Vicks mijo.",
+        "7up": "Latino parents: ‘Stomach hurts?’ — 7UP. ‘Headache?’ — 7UP. ‘Your leg fell off?’ — pues toma 7UP.",
+        huevo: "If your Latino mom starts rubbing an egg on you… just accept it. You're getting spiritually rebooted."
+    };
+
+    document.getElementById("joke-box").innerHTML =
+        `<p class='joke'>${jokes[item]}</p>`;
+}
+</script>
+
+</body>
+</html>
+
